@@ -117,7 +117,7 @@
   <div class="education-experience-skills" id="summary">
     <div class="container">
       <div class="row is-flex">
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 text-center">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
           <div class="box">
             <h4><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;Education</h4>
             <div class="line"></div>
@@ -139,7 +139,7 @@
             <br>Diploma of Graphic designer
           </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 text-center">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
           <div class="box">
             <h4><i class="fa fa-star" aria-hidden="true"></i>&nbsp;Experiences</h4>
             <div class="line"></div>
@@ -160,7 +160,7 @@
             <br><span class="">Graphic designer</span>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 text-center">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
           <div class="box">
             <h4><i class="fa fa-wrench" aria-hidden="true"></i>&nbsp;Skills</h4>
             <div class="line"></div>
@@ -263,16 +263,16 @@
           <%= form_for :contact do |f| %>
             <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <input class="form-control" type="text" id="fname" name="contact[name]" placeholder="Name:">
+                <input class="form-control" type="text" id="fname" name="contact[name]" placeholder="Name:" required>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <input class="form-control" type="text" id="lname" name="contact[email]" placeholder="Email:">
+                <input class="form-control" type="text" id="lname" name="contact[email]" placeholder="Email:" required>
               </div>
             </div>
             <br>
-            <span><textarea class="form-control" id="subject" name="contact[message]" placeholder="Message:" style="height:100px"></textarea></span>
+            <span><textarea class="form-control" id="subject" name="contact[message]" placeholder="Message:" style="height:100px" required></textarea></span>
             <br>
-            <input class="btn" type="submit" value="Submit">
+            <input class="btn" type="submit" value="Send Message" formaction="mailto:chrustelle.bettoni@gmail.com">
           <% end %>
           <br><br><br>
           <div class="line"></div><br>
