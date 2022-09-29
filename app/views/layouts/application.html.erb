@@ -14,12 +14,18 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600" rel="stylesheet">
     <!-- font awesome -->
     <script src="https://use.fontawesome.com/35ebfa7191.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <!-- dev icons font -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+
+    <%= render "shared/ios_pwa-links" %>
+
+    <%# google %>
+    <meta name="description" content="Graphic designer, community manager and junior full stack developer, I like to meet and work with various profiles. Creative and autonomous, I appreciate the challenge and acquire new skills">
 
     <script>
       (function(){
@@ -35,6 +41,107 @@
         window.sr = new ScrollReveal(config)
       })()
     </script>
+
+    <script type="text/javascript">
+    (function() {
+
+      var quotes = $(".quotes");
+      var quoteIndex = -1;
+
+      function showNextQuote() {
+          ++quoteIndex;
+          quotes.eq(quoteIndex % quotes.length)
+              .fadeIn(1500)
+              .delay(1500)
+              .fadeOut(1500, showNextQuote);
+      }
+
+      showNextQuote();
+
+    })();
+  </script>
+  <script type="text/javascript">
+    var frontPage = {
+      duration: 1500,
+    }
+    var frontPageContent1 = {
+      duration: 1500,
+      delay: 500,
+    }
+    var im = {
+      duration: 1500,
+      delay: 1000,
+    }
+    var underline = {
+      duration: 1500,
+      delay: 1300,
+    }
+    var frontPageContent2 = {
+      duration: 1500,
+      delay: 2000,
+    }
+    var frontPageContent3 = {
+      scale: 0.9,
+      duration: 1500,
+      delay: 3000,
+    }
+    var reveal = {
+      duration: 800,
+      reset: true,
+    }
+    var box = {
+      duration: 800,
+      reset: true,
+    }
+    var grid = {
+      duration: 800,
+      reset: true,
+    }
+    sr.reveal('.front-page', frontPage);
+    sr.reveal('.front-page-content1', frontPageContent1);
+    sr.reveal('.im', im);
+    sr.reveal('.underline', underline);
+    sr.reveal('.front-page-content2', frontPageContent2);
+    sr.reveal('.front-page-content3', frontPageContent3);
+    sr.reveal('.reveal', reveal);
+    sr.reveal('.box', box, 150);
+    sr.reveal('.grid', grid, 150);
+  </script>
+  <!-- Page preloader -->
+  <script type="text/javascript">
+    $(window).load(function() {
+      $("#loading").addClass("hidden");
+      $("#hidden").removeClass("hidden");
+      window.scrollBy(0, 1);
+    })
+  </script>
+  <!-- Smooth scrolling -->
+  <script type="text/javascript">
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 800);
+          return false;
+        }
+      }
+    });
+  </script>
+  <!-- Javascript to add class on scroll for navbar -->
+  <script type="text/javascript">
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+
+      //>=, not <=
+      if (scroll >= 100) {
+          //clearHeader, not clearheader - caps H
+          $(".navbar").addClass("nav-bg");
+      }
+    }); //missing );
+  </script>
   </head>
 
   <body>

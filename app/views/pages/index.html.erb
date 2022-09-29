@@ -65,7 +65,7 @@
         <div class="col-xs-1 col-sm-3 col-md-3 col-lg-3">
         </div>
         <div class="col-xs-10 col-sm-6 col-md-6 col-lg-6">
-          <p>Graphic designer since 2007, and community manager since 2014, I had the chance throughout these years of experience to work in various fields (IT, medicine, music, video games or tattoo).<br>
+          <p>Graphic designer since 2007, and Community manager since 2014, I had the chance throughout these years of experience to work in various fields (IT, health care, music, video games or tattoo).<br>
 
           While I really enjoy working by myself, nothing gives me more pleasure than be part of a team.<br>
           Creative and autonomous, I believe teamwork and getting connected with other people allows me to use my skills to their maximum and to learn more.</p>
@@ -80,7 +80,7 @@
 
 
           <h2>2014.</h2>
-          <p>My passion for the web and communication grew, and I decided to take community manager training at 'Doranco' training center.<br>
+          <p>My passion for the web and communication grew, and I decided to take Community manager training at 'Doranco' training center.<br>
 
           A great adventure in Parisian communication agencies like 'CCM Benchmark' and 'Spöka' will follow!</p>
 
@@ -93,8 +93,13 @@
           At the same time, I start working as a freelancer, with a real thirst for new, stimulating and varied challenges.</p>
 
 
-          <h2>2021-2022.</h2>
-          <p>Je ne sais pas encore quoi ecrire ici</p>
+          <h2>2022.</h2>
+          <p>After spent 1 month at 42 school learning Shell and the C language, I decided to continue on this path and change careers by learning the exciting job of web developer.<br>
+
+          I decided to join le Wagon and ti do the 9-week full-time intensive coding bootcamp learning HTML, CSS, Bootstrap,<br>
+          JavaScript ES6, SQL, git, GitHub, Heroku and Ruby on Rails.
+
+          And now, what's next?</p>
 
 
           <h2>AND BESIDES THAT ?</h2>
@@ -170,14 +175,10 @@
                 <i class="devicon-css3-plain-wordmark"></i>
                 <i class="devicon-bootstrap-plain-wordmark"></i><br>
                 <i class="devicon-ruby-plain-wordmark"></i>
-                <i class="devicon-rails-plain-wordmark"></i><br>
-                <i class="devicon-javascript-plain-wordmark"></i>
-                <i class="devicon-sql-plain-wordmark"></i>
-                <i class="devicon-tailwind-plain-wordmark"></i>
-                <i class="devicon-heroku-plain-wordmark"></i>
-                <i class="devicon-illustrator-plain-wordmark"></i>
-                <i class="devicon-photoshop-plain-wordmark"></i>
-                <i class="devicon-figma-plain-wordmark"></i>
+                <i class="devicon-rails-plain-wordmark"></i>
+                <i class="devicon-heroku-plain-wordmark"></i><br>
+                <i class="fa-brands fa-square-js"></i>
+                <i class="fa-brands fa-figma"></i>
               </div>
             </h1>
           </div>
@@ -247,7 +248,6 @@
     </div>
   </div>
 
-
   <div class="contact-me" id="contact-me">
     <div class="container reveal">
       <div class="row">
@@ -272,12 +272,13 @@
             <br>
             <span><textarea class="form-control" id="subject" name="contact[message]" placeholder="Message:" style="height:100px" required></textarea></span>
             <br>
-            <input class="btn" type="submit" value="Send Message" formaction="mailto:chrustelle.bettoni@gmail.com">
+            <input class="btn" type="submit" value="Send Message" formaction="mailto:christelle.bettoni@gmail.com">
           <% end %>
           <br><br><br>
           <div class="line"></div><br>
           <a href="https://github.com/cbettoni" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp;
           <a href="https://www.linkedin.com/in/christelle-bettoni/" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>&nbsp;
+          <a href="https://open.spotify.com/playlist/0Wf0AHKXudSETvNbLitatj?si=b8543f9f60f64d2f" target="_blank"><i class="fa-brands fa-spotify"></i></a>&nbsp;
           <br><br>
           <span class="copyright">&copy; 2022 Christelle Bettoni</span>
         </div>
@@ -285,105 +286,4 @@
       </div>
     </div>
   </div>
-</div>
 
-<script type="text/javascript">
-  (function() {
-
-    var quotes = $(".quotes");
-    var quoteIndex = -1;
-
-    function showNextQuote() {
-        ++quoteIndex;
-        quotes.eq(quoteIndex % quotes.length)
-            .fadeIn(1500)
-            .delay(1500)
-            .fadeOut(1500, showNextQuote);
-    }
-
-    showNextQuote();
-
-  })();
-</script>
-<script type="text/javascript">
-  var frontPage = {
-    duration: 1500,
-  }
-  var frontPageContent1 = {
-    duration: 1500,
-    delay: 500,
-  }
-  var im = {
-    duration: 1500,
-    delay: 1000,
-  }
-  var underline = {
-    duration: 1500,
-    delay: 1300,
-  }
-  var frontPageContent2 = {
-    duration: 1500,
-    delay: 2000,
-  }
-  var frontPageContent3 = {
-    scale: 0.9,
-    duration: 1500,
-    delay: 3000,
-  }
-  var reveal = {
-    duration: 800,
-    reset: true,
-  }
-  var box = {
-    duration: 800,
-    reset: true,
-  }
-  var grid = {
-    duration: 800,
-    reset: true,
-  }
-  sr.reveal('.front-page', frontPage);
-  sr.reveal('.front-page-content1', frontPageContent1);
-  sr.reveal('.im', im);
-  sr.reveal('.underline', underline);
-  sr.reveal('.front-page-content2', frontPageContent2);
-  sr.reveal('.front-page-content3', frontPageContent3);
-  sr.reveal('.reveal', reveal);
-  sr.reveal('.box', box, 150);
-  sr.reveal('.grid', grid, 150);
-</script>
-<!-- Page preloader -->
-<script type="text/javascript">
-  $(window).load(function() {
-    $("#loading").addClass("hidden");
-    $("#hidden").removeClass("hidden");
-    window.scrollBy(0, 1);
-  })
-</script>
-<!-- Smooth scrolling -->
-<script type="text/javascript">
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 800);
-        return false;
-      }
-    }
-  });
-</script>
-<!-- Javascript to add class on scroll for navbar -->
-<script type="text/javascript">
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-
-     //>=, not <=
-    if (scroll >= 100) {
-        //clearHeader, not clearheader - caps H
-        $(".navbar").addClass("nav-bg");
-    }
-  }); //missing );
-</script>

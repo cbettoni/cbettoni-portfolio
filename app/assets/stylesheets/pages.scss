@@ -73,10 +73,14 @@ html, body {
 .quotes {display: none;}
 
 // navigation bar styling
+.logo {
+  margin-left: 30px;
+}
+
 .nav-container {
   display: flex;
   align-content: flex-start;
-  justify-content: space-evenly;
+  gap: 20px;
 }
 
 .navbar {
@@ -371,6 +375,7 @@ html, body {
       }
     }
   }
+
   .portfolio-contents {
     display: flex;
     align-items: center;
@@ -401,14 +406,18 @@ html, body {
   }
 }
 
+  /* Contact form */
+
+
 .contact-me {
   padding-top: 20px;
   padding-bottom: 30px;
-  background-color: #212121;
+  background-color: #616161;
   color: white;
   .title {
     font-size: 50px;
     font-weight:200;
+    color: white;
   }
   .line {
     margin:0 auto;
@@ -427,5 +436,10 @@ html, body {
   }
   .copyright {
     font-family: 'Fira Sans', sans-serif;
+  }
+
+  .btn {
+    color: #616161;
+    border: solid white 1px;
   }
 }
