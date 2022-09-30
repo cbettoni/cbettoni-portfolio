@@ -441,5 +441,9 @@ html, body {
   .btn {
     color: #616161;
     border: solid white 1px;
+    margin-bottom: 50px;
+    &:hover {
+      color: rgb(168, 168, 168);
+    }
   }
 }
